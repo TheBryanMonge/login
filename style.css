@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", "roboto";
+}
+
+body {
+  height: 100vh;
+  background-color: #fcfcfc;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  height: 500px;
+  width: 700px;
+  padding: 70px 0;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  box-shadow: 0 10px 30px -11px #0000005e;
+  border-radius: 23px;
+  border-style: solid solid solid solid;
+  border-width: 1px;
+  border-color: #0000000e #00000025 #0000002d #00000025;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #ff9634, #ffde4d);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data {
+  width: 450px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  background-color: #0000000a;
+  width: 370px;
+  height: 40px;
+  padding: 0 10px 0 15px;
+  border-radius: 100px;
+  border: solid 1px #00000009;
+  justify-self: flex-end;
+  outline: none;
+  transition: ease-out 0.3s;
+}
+
+.input:focus {
+  background-color: #ffffff;
+  border: solid 1px #f8cb0042;
+  width: 450px;
+  border-radius: 13px;
+  box-shadow: 0 0 24px -9px #f8cb00;
+}
+
+#pass {
+  margin-top: 30px;
+}
+
+.forw-pass {
+  text-decoration: none;
+  align-self: flex-end;
+  color: #00000073;
+  margin: 12px 16px 0 0;
+}
+.forw-pass:hover {
+  color: #000000ad;
+}
+
+.btn {
+  width: 170px;
+  height: 40px;
+  margin: 60px 0 0 0;
+  border: solid 1px #ffffff;
+  border-radius: 60px;
+  cursor: pointer;
+  color: #ffffff;
+  text-shadow: 0 0 7px #70707086;
+  font-weight: bolder;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  background-size: 400% 100%;
+  background-image: linear-gradient(
+    to right,
+    #898989,
+    #bababa,
+    #e7e7e7,
+    #ffffff,
+    #ffffff,
+    #d6e7ff,
+    #94c0ff,
+    #4894ff
+  );
+  transition: ease 0.15s;
+  box-shadow: 0 0 30px -10px #898989;
+}
+
+.btn:hover {
+  background-position: 100% 0%;
+  box-shadow: 0 0 30px -10px #4894ff;
+}
+.btn:active:focus {
+  outline: none;
+}
+
+.btn:active {
+  transition: ease-in;
+  transform: scale(0.9);
+  box-shadow: 0 0 3px 0px #104385;
+  filter: brightness(0.9);
+}
